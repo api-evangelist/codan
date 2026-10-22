@@ -1,23 +1,93 @@
 aid: codan
+
 name: Codan
-description: 'Codan is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Codan Limited (ASX: CDA) is an Adelaide, Australia-headquartered global technology group, founded in 1959, building trusted communications, detection and connection solutions for defence forces, public safety agencies, humanitarian organisations and consumers. Its businesses include DTC (secure mission-critical communications for defence, public safety, broadcast and unmanned systems), Minelab (metal detection for gold prospecting, coin and treasure hunting and countermine) and Zetron (Next Generation 911 and command-and-control for public safety and critical infrastructure). No public developer portal or API documentation was found on codan.com.au.'
+
 url: https://raw.githubusercontent.com/api-evangelist/codan/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Communications
+- Defence
+- Public Safety
+- Metal Detection
+- Broadcast
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://codan.com.au/wp-content/uploads/2026/08/banner-front.webp
+
 common:
+- type: WellKnown
+  url: well-known/codan-well-known.yml
+- type: Hosts
+  url: hosts/codan-hosts.yml
+- type: Vendors
+  url: vendors/codan-vendors.yml
+- type: DomainSecurity
+  url: security/codan-domain-security.yml
 - type: Website
   url: https://codan.com.au/
+- type: About
+  url: https://codan.com.au/about/
+- type: Support
+  url: https://codan.com.au/contact/
+- type: Newsroom
+  url: https://codan.com.au/news/
+- type: Investors
+  url: https://codan.com.au/investor-centre/
+- type: Careers
+  url: https://codan.com.au/people-careers/
+- type: PrivacyPolicy
+  url: https://codan.com.au/privacy
+- type: TermsOfService
+  url: https://codan.com.au/terms
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website codan.com.au self-identifies as Codan (title "Codan | Turning innovation into real-world impact"); no developer portal, API docs, GitHub org or social links found on the site or by search.
+  evidence:
+  - url: https://codan.com.au/
+    status: 200
+  - url: https://codan.com.au/about/
+    status: 200
+  - url: https://codan.com.au/contact/
+    status: 200
+  - url: https://codan.com.au/investor-centre/
+    status: 200
+  - url: https://codan.com.au/people-careers/
+    status: 200
+  - url: https://codan.com.au/news/
+    status: 200
+  - url: https://codan.com.au/privacy
+    status: 200
+  - url: https://codan.com.au/terms
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

@@ -1,0 +1,23 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/codan/integrations
+- https://n8n.io/integrations/codan/
+- https://composio.dev/toolkits/codan
+- https://monid.ai/tools/codan
+checked:
+- https://zapier.com/apps/codan/integrations
+- https://zapier.com/apps/zetron/integrations
+- https://www.make.com/en/integrations/codan
+- https://n8n.io/integrations/codan/
+- https://codan.com.au/
+- https://www.zetron.com/zetron-features-end-to-end-control-room-solutions-at-apco/
+- https://composio.dev/toolkits/codan
+- https://monid.ai/tools/codan
+summary: No integration marketplace listing, partner/integrations page or public contract was found for Codan (or
+  its DTC, Minelab and Zetron businesses). Press coverage (2014-2017) says Zetron dispatch consoles (DCS-5020, MAX
+  Dispatch) expose CAD/AVL APIs to third-party CAD vendors, but no public documentation of those interfaces exists,
+  so no edges are recorded.
+marketplace_apps: []
+edges: []
+templates: []

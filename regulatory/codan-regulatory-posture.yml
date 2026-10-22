@@ -1,0 +1,76 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+- https://codan.com.au/wp-content/uploads/2025/12/Terms-and-Conditions_12-92754.pdf
+scope: >-
+  Codan Limited's corporate site (codan.com.au). https://codan.com.au/privacy/ 301-redirects to the Privacy
+  Policy PDF (Policy CP0000-039, Issue 6, effective 18 November 2025) under the Australian Privacy Act/APPs,
+  with an EU/UK GDPR section. https://codan.com.au/terms/ redirects to a supplier purchasing
+  Terms and Conditions PDF (procurement terms for goods/services supplied TO Codan), which was read and carries
+  no regulatory signal. The un-slashed /privacy and /terms paths returned 403 to a plain curl GET.
+signals:
+  data_subject_request:
+    url: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+    section: How can you access your personal information? / Your additional rights and choices
+    note: >-
+      Access and correction rights are available by written request to the Privacy Officer; for EU/UK residents
+      the policy also lists erasure, restriction, portability and objection rights "in certain circumstances".
+    evidence:
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You have a right to request access to your personal information and to request its correction if it is out of date or incorrect.
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You may request access or correction at any time by sending a written request to our Privacy Officer at privacy@codan.com.au.
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'erasure: You can ask us to erase your personal information without undue delay in certain circumstances such as if you withdraw your consent and we otherwise have no legal reason to retain it.'
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'data portability: You can, in some circumstances such as where we are processing your information with your consent, receive some personal information you have given us in a structured, commonly used and machine-readable format and/or ask us to transmit it to someone else if technically possible feasible;'
+  data_retention:
+    url: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+    section: How do we hold personal information? / European & United Kingdom Residents
+    note: Retention is purpose-based with no stated periods; data is destroyed or de-identified when no longer needed or legally required.
+    evidence:
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We have procedures in place to destroy or de-identify personal information once it is no longer needed for a valid purpose or required to be kept by law.
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: How long do we retain your personal information? We retain your personal information for as long as necessary to provide our services and products that you have requested, to comply with our legal obligations, resolve disputes, and enforcing our rights and policies.
+  data_residency:
+    url: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+    section: Cross Border Disclosures of Information
+    note: >-
+      No residency commitment: data may go to Codan Group entities in twelve named countries and to vendors
+      storing it on US servers; EU/UK transfers rely on SCCs, the UK IDTA/Addendum and, where applicable, the Data Privacy Framework.
+    evidence:
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: to any members of the Codan Group that are located overseas (with our offices currently operating out of Australia, Canada, Ireland, Malaysia, the United Kingdom, the United Arab Emirates, Brazil, Mexico, Singapore, Denmark, India and the United States of America);
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: to our vendors and/or service providers who provide services to us (including direct marketing services), where such information may be processed and/or stored by our vendors and/or service providers on servers located in the United States of America; and
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We use the European Commission’s Standard Contractual Clauses and the UK IDTA/Addendum where required.
+  incident_notification:
+    url: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+    section: Cross Border Disclosures of Information
+    note: Commits to a data-breach response plan and to notifying individuals and regulators of notifiable breaches as the law requires; no timeframe is stated.
+    evidence:
+    - source: https://codan.com.au/wp-content/uploads/2025/12/CP0000-039-1_Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We maintain a data-breach response plan and will notify individuals and regulators of eligible/Notifiable Data Breaches under applicable laws.
